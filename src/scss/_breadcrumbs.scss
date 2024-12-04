@@ -1,0 +1,26 @@
+.breadcrumbs {
+  &__container {
+    margin-top: 35px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    color: var(--black);
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 10px;
+    color: var(--gray);
+    position: relative;
+  }
+
+  &__item:not(:last-child):after {
+    content: "/";
+    margin-left: 9px;
+  }
+  &__item-link {
+    color: inherit;
+  }
+}
